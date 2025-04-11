@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sahu Bank - Online Banking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #d4fc79, #96e6a1);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #2d3436;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #00cec9;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .welcome-box {
+      text-align: center;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .welcome-box h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #2d3436;
+    }
+
+    .welcome-box a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #00b894;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .welcome-box a:hover {
+      background-color: #019670;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">🏦 Sahu Bank</div>
+    <div>
+      <a href="bank/deposit">Deposit</a>
+      <a href="bank/withdraw">Withdraw</a>
+      <a href="bank/balance">Balance</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="welcome-box">
+      <h2>Welcome to Sahu Bank Online Banking</h2>
+      <a href="bank/deposit">💰 Deposit</a>
+      <a href="bank/withdraw">💸 Withdraw</a>
+      <a href="bank/balance">📊 Check Balance</a>
+    </div>
+  </div>
+
+</body>
+</html>
